@@ -12,7 +12,7 @@ class Phone:
 
 class Android(Phone):
     def __init__(self, brand, model):
-        super().__init__(brand, model)
+         Phone.__init__(self, brand, model)
 
 android_phone = Android("Samsung", "Galaxy S23")
 
