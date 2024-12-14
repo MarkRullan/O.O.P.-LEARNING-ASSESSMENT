@@ -1,21 +1,22 @@
-#L.A. #18
-#Mark J. Rullan
+#LA 18
+#Mark Rullan
 
-class Pizza:
-    def __init__(self, size, crust_type, toppings):
-        self.size = size
-        self.crust_type = crust_type
-        self.toppings = toppings
+class Pinakbet:
+    def __init__(self, squash, eggplant, okra, yard_long_beans, bitter_melon):
+        self.__squash = squash
+        self.eggplant = eggplant
+        self.okra = okra
+        self.yard_long_beans = yard_long_beans
+        self.bitter_melon = bitter_melon
+        
 
     def __str__(self):
-    
-        toppings_str = ", ".join(self.toppings)
-        return f"A {self.size} pizza with a {self.crust_type} crust, topped with {toppings_str}."
+        return f"Ang pakbet ko may mga gulay na {self.__squash}, {self.eggplant}, {self.okra}, {self.yard_long_beans}, {self.bitter_melon}"
 
-pizza1 = Pizza("large", "thin", ["cheese", "pepperoni", "olives"])
-pizza2 = Pizza("medium", "stuffed", ["mushrooms", "sausage", "onions", "cheese"])
-pizza3 = Pizza("small", "gluten-free", ["tomato", "basil", "mozzarella"])
+pinakbet = Pinakbet("garlic", "onions", "tomatoes", "shrimp paste", "salt")
+pinakbet2 = Pinakbet("kalabasa", "talong", "okra", "sitaw", "ampalaya")
+pinakbet3 = Pinakbet("kalabasa", "talong", "okra", "sitaw", "ampalaya")
 
-print(pizza1)
-print(pizza2)
-print(pizza3)
+print(pinakbet)
+print(pinakbet2)
+print(pinakbet3)
