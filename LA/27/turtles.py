@@ -1,4 +1,4 @@
-#L.A. #26
+#L.A. #27
 #Mark J. Rullan
 
 from abc import ABC, abstractmethod
@@ -42,3 +42,14 @@ class Raphael(NinjaTurtle):
     @property
     def alias (self):
         return self.__alias
+
+if __name__ == "__main__":
+    Leonardo = Leonardo("Leornardo", "1")
+    Michaelangelo = Michaelangelo("Michaelangelo", "2")
+    Donatello = Donatello("Donatello", "3")
+    Raphael = Raphael("Raphael", "4")
+
+    print(Leonardo.alias)
+    print(Michaelangelo.alias)
+    print(Donatello.alias)
+    print(Raphael.alias)
